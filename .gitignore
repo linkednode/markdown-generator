@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+
+# OS-specific
+.DS_Store
+
+# Project-specific
+config.ini
+data.json
+
+# Flow
+README.txt
+
+# venv
+venv/
