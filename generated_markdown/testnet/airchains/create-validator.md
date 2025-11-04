@@ -2,14 +2,14 @@
 
 
 
-# createvalidator
+# create-validator
 
 ## Check status
 
 
 ```bash
 # check sync status, once your node is fully synced, the output from "catching_up" will print "false"
-symphonyd status 2>&1 | jq
+junctiond status 2>&1 | jq
 
 ```
 ## Create validator
@@ -18,8 +18,8 @@ symphonyd status 2>&1 | jq
 ```bash
 cd $HOME
 # Create validator.json file
-echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(symphonyd tendermint show-validator | grep -Po '\"key\":\s*\"\K[^"]*')\"},
-\"amount\": \"1000000note\",
+echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(junctiond tendermint show-validator | grep -Po '\"key\":\s*\"\K[^"]*')\"},
+\"amount\": \"1000000amf\",
 \"moniker\": \"$MONIKER\",
 \"identity\": \"\",
 \"website\": \"\",
@@ -32,10 +32,10 @@ echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(symph
 }" > validator.json
 
 # Create a validator using the JSON configuration
-symphonyd tx staking create-validator validator.json \
+junctiond tx staking create-validator validator.json \
 --from $WALLET \
---chain-id $SYMPHONY_CHAIN_ID \
---gas-adjustment 1.5 --gas auto --gas-prices 0.025note \
+--chain-id $AIRCHAINS_CHAIN_ID \
+--fees 200amf \
 -y
 
 ```
