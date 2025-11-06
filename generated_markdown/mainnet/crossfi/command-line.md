@@ -78,7 +78,7 @@ crossfid q slashing signing-info $(crossfid tendermint show-validator)
 crossfid q slashing params
 
 # Unjail validator
-crossfid tx slashing unjail --from $WALLET --chain-id $name_chain --gas=auto --gas-adjustment=1.5 --gas-prices 10000000000000mpx 
+crossfid tx slashing unjail --from $WALLET --chain-id $CROSSFI_CHAIN_ID --gas=auto --gas-adjustment=1.5 --gas-prices 10000000000000mpx 
 ```
 ## Service Operations
 

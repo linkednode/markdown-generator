@@ -211,6 +211,7 @@ class CreateMarkdown:
         script = ''.join([str(item) for item in common_data['scriptValidatorOperations']])
         replacements = {
             "binary": data['binary'],
+            "name_chain": data['name_chain'],
             "fees_method": data['fees_method'].replace("\n",""),
         }
         for old_value, new_value in replacements.items():

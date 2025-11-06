@@ -78,7 +78,7 @@ emped q slashing signing-info $(emped tendermint show-validator)
 emped q slashing params
 
 # Unjail validator
-emped tx slashing unjail --from $WALLET --chain-id $name_chain --gas auto --gas-adjustment 1.5 --fees 30uempe 
+emped tx slashing unjail --from $WALLET --chain-id $EMPEIRIA_CHAIN_ID --gas auto --gas-adjustment 1.5 --fees 30uempe 
 ```
 ## Service Operations
 

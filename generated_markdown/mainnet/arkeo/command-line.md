@@ -78,7 +78,7 @@ arkeod q slashing signing-info $(arkeod tendermint show-validator)
 arkeod q slashing params
 
 # Unjail validator
-arkeod tx slashing unjail --from $WALLET --chain-id $name_chain --gas-adjustment 1.5 --gas auto --gas-prices=0.001uarkeo 
+arkeod tx slashing unjail --from $WALLET --chain-id $ARKEO_CHAIN_ID --gas-adjustment 1.5 --gas auto --gas-prices=0.001uarkeo 
 ```
 ## Service Operations
 

@@ -78,7 +78,7 @@ symphonyd q slashing signing-info $(symphonyd tendermint show-validator)
 symphonyd q slashing params
 
 # Unjail validator
-symphonyd tx slashing unjail --from $WALLET --chain-id $name_chain --gas-adjustment 1.5 --gas auto --gas-prices 0.025note 
+symphonyd tx slashing unjail --from $WALLET --chain-id $SYMPHONY_CHAIN_ID --gas-adjustment 1.5 --gas auto --gas-prices 0.025note 
 ```
 ## Service Operations
 

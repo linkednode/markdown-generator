@@ -78,7 +78,7 @@ junctiond q slashing signing-info $(junctiond tendermint show-validator)
 junctiond q slashing params
 
 # Unjail validator
-junctiond tx slashing unjail --from $WALLET --chain-id $name_chain --fees 200amf 
+junctiond tx slashing unjail --from $WALLET --chain-id $AIRCHAINS_CHAIN_ID --fees 200amf 
 ```
 ## Service Operations
 

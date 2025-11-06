@@ -78,7 +78,7 @@ atomoned q slashing signing-info $(atomoned tendermint show-validator)
 atomoned q slashing params
 
 # Unjail validator
-atomoned tx slashing unjail --from $WALLET --chain-id $name_chain --gas-adjustment 1.5 --gas auto --gas-prices=0.001uatone 
+atomoned tx slashing unjail --from $WALLET --chain-id $ATOMONE_CHAIN_ID --gas-adjustment 1.5 --gas auto --gas-prices=0.001uatone 
 ```
 ## Service Operations
 

@@ -78,7 +78,7 @@ selfchaind q slashing signing-info $(selfchaind tendermint show-validator)
 selfchaind q slashing params
 
 # Unjail validator
-selfchaind tx slashing unjail --from $WALLET --chain-id $name_chain --gas-adjustment 1.2 --gas auto --gas-prices=0.5uslf 
+selfchaind tx slashing unjail --from $WALLET --chain-id $SELFCHAIN_CHAIN_ID --gas-adjustment 1.2 --gas auto --gas-prices=0.5uslf 
 ```
 ## Service Operations
 

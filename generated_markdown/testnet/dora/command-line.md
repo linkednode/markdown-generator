@@ -78,7 +78,7 @@ dorad q slashing signing-info $(dorad tendermint show-validator)
 dorad q slashing params
 
 # Unjail validator
-dorad tx slashing unjail --from $WALLET --chain-id $name_chain --gas-adjustment 1.5 --gas auto --gas-prices=10000000000peaka 
+dorad tx slashing unjail --from $WALLET --chain-id $DORA_CHAIN_ID --gas-adjustment 1.5 --gas auto --gas-prices=10000000000peaka 
 ```
 ## Service Operations
 
